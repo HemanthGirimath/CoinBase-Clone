@@ -1,0 +1,97 @@
+
+.mat-dialog-actions button{
+    width: 220px;
+    padding: 20px;
+}
+
+
+::ng-deep.mat-dialog-container{
+    background-color: #1f1B24;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #111214 ;
+
+}
+.tokenContainer{
+    display: grid;
+    place-items: center;
+    margin-top:80px;
+}
+.balance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    margin-right: 10px;
+}
+
+.second span{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #3773f5;
+}
+.balance .numb{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.balance .token{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3773f5;
+}
+
+.disclamer{
+    font-size: 1rem;
+    font-weight: 300;
+}
+form{
+    margin-top: 100px;
+}
+::ng-deep.mat-form-field{
+    border: #282b2f;
+}
+
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-flex{
+    background-color: #121212;
+    color: white;
+    /* opacity: 10%; */
+}
+
+::ng-deep .mat-form-field{
+    width: 100%;
+}
+::ng-deep .mat-form-field {
+    width: 100%;
+}
+
+form button{
+    width: 100%;
+    padding: 10px;
+}
+.btm-display{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+::ng-deep.mat-select-value-text{
+    color: white;
+}
+::ng-deep.mat-option{
+    background-color: #111214;
+    color: white;
+}
+::ng-deep.mat-option.mat-active{
+    background-color: #282b2f !important;
+    color: white;
+}
+::ng-deep.mat-option:hover:not(.mat-option-disabled){
+    background-color: #282b2f !important;
+    color: white;
+}

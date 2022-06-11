@@ -1,0 +1,42 @@
+<div class="container">
+    <mat-dialog-actions>
+        <div>
+         <button mat-button (click)="sendClicked()" >Send</button>
+         <button mat-button (click)="reciveClicked()">Receive</button>
+        </div>
+     </mat-dialog-actions>
+
+     <ng-container *ngIf="sendbtnClicked">
+        <form [formGroup]="TransactionForm" >
+            <mat-form-field appearance="outline" class="first-form">
+                <mat-label style="color: white;">AMT</mat-label>
+                <input  type="text" matInput formControlName="Amt">
+            </mat-form-field>
+                   
+            <mat-form-field appearance="outline">
+                <mat-label style="color: white;">To Address </mat-label>
+                <input  type="text" matInput formControlName="Address">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label style="color: white;">Pay with</mat-label>
+                <mat-select formControlName="Pay">
+                    <mat-option value="ETH">ETH</mat-option>
+                    <mat-option value="BTC">BTC</mat-option>
+                    <mat-option value="SOL">SOL</mat-option>
+                  </mat-select>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit" (click)="SendTokens()" (click)="openDialoge()"> Continue </button>
+        </form>
+        <div class="btm-display">
+            <div><span>{{selectedValue.value}} Balance</span></div>
+            <div><span>{{tokenValue }}  {{selectedValue.value}}  </span></div>
+        </div>
+        
+     </ng-container>
+
+     <ng-container *ngIf="recivebtnClicked">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quae veritatis maiores sed voluptas magnam nostrum a sequi natus, maxime hic modi delectus quaerat excepturi quia provident facere blanditiis expedita?
+    </ng-container>
+     
+</div>

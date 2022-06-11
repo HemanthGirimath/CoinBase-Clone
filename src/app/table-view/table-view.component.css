@@ -1,0 +1,21 @@
+.title{
+    padding: 13px;
+}
+.table-view{
+    margin: 10px;
+}
+
+
+table {
+    width: 100%;
+    border: 1px solid #282b2f;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+
+table th{
+    border-bottom: 1px solid #282b2f;
+
+}   

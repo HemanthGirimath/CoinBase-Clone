@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: [first]100px [second]auto [third]auto;
+    height: 100vh;
+}
+.side-nav{
+   grid-row: 1/4;
+}
+.navbar{
+    grid-column: 2/7;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column: 2/6;
+    grid-row: 2/4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.graph{
+    grid-column: 1/5;
+    border: 1px solid #282b2f;
+    margin-bottom: 10px;
+}
+.table{
+    grid-column: 1/5;
+    border: 1px solid #282b2f;
+
+}
+
+.right-nav{
+    grid-row: 2/2;
+    grid-column: 6/7;
+}

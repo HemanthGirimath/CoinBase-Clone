@@ -1,0 +1,11 @@
+<div class="container">
+    <span><p>Portfolio balance</p></span>
+    <h1>{{balance|currency}}</h1>
+    <canvas baseChart width="700" height="300"
+    [type]="'line'"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [legend]="lineChartLegend"
+    [plugins]="lineChartPlugins">
+  </canvas>
+</div>
