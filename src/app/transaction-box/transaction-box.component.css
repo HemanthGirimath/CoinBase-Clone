@@ -95,3 +95,10 @@ form button{
     background-color: #282b2f !important;
     color: white;
 }
+
+.qrcode{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
