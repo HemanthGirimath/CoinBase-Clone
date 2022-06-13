@@ -78,26 +78,26 @@ async tryhard(){
   })
 }
 
-// async SendTokens() {
+async SendTokens() {
  
-//   const  sdk = new ThirdwebSDK(
-//     new ethers.Wallet(
-//       environment.metamask_Key,
-//       ethers.getDefaultProvider('https://rinkeby.infura.io/v3/94ef7ea56a0e4585834ffbb4dfb3f8b8'))
-//       )
-//       try{
-//         const x =await sdk.wallet.transfer(this.Address.value,this.Amt.value,this.address)
-//         console.log("completed..")
-//         this.TransactionCompleted = true
-//         this.openDialoge();
-//         console.log(x);
-//       }
-//       catch(err){
-//         console.log(err)   
+  const  sdk = new ThirdwebSDK(
+    new ethers.Wallet(
+      environment.metamask_Key,
+      ethers.getDefaultProvider('https://rinkeby.infura.io/v3/94ef7ea56a0e4585834ffbb4dfb3f8b8'))
+      )
+      try{
+        const x =await sdk.wallet.transfer(this.Address.value,this.Amt.value,this.address)
+        console.log("completed..")
+        this.TransactionCompleted = true
+        this.openDialoge();
+        console.log(x);
+      }
+      catch(err){
+        console.log(err)   
         
-//       }     
+      }     
       
-//     }
+    }
 
  async ngOnInit(): Promise<void> {
     this.thirdwebData = await this.coin.getOnlythirdwebValue();
