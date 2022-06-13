@@ -16,10 +16,8 @@ export class HeaderComponent implements OnInit {
     //@ts-ignore
     const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
     this.contractAddress = accounts[0]
-    //sending contractAddress to a variable inside servcies 
-    this.coin.getTokenAddress(this.contractAddress)
-    console.log(this.contractAddress)
   }
+ 
 
   
   openDialog(){

@@ -10,6 +10,8 @@
   },
   "private": true,
   "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/react": "^1.9.3",
     "@angular/animations": "~12.2.0",
     "@angular/cdk": "^12.2.13",
     "@angular/common": "~12.2.0",

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks';
 
 
 @Component({

@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { SendCompletedModalComponent } from './send-completed-modal/send-completed-modal.component';
 import { FormControl,FormGroup } from '@angular/forms';
 import { CoinService } from 'src/app/coin.service';
-import { ThirdwebSDK, TransactionResult } from '@thirdweb-dev/sdk';
+import { ThirdwebSDK } from '@thirdweb-dev/sdk';
 import { ethers } from 'ethers';
 import { environment } from 'src/environments/environment';
 import { LoadingModalComponent } from './loading-modal/loading-modal.component';
